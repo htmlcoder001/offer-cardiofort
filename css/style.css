@@ -760,3 +760,9 @@ a:hover {
         display: none;
     }
 }
+
+@media (max-width:375px) {
+    .header__down-up-logo {
+        width: 170px;
+    }
+}
