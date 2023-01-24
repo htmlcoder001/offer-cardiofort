@@ -615,10 +615,29 @@ a:hover {
     font-weight: 600;
 }
 
+.mobile-menu {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+}
+.mobile-menu__line {
+    height: 1px;
+    width: 25px;
+    background-color: #fff;
+}
+.mobile-menu:before {
+    content: 'MENÚ';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: -50px;
+    top: calc(50% + 2px);
+    transform: translateY(-50%);
+}
+
 @media (max-width:1300px) {
-    .header__down {
-        gap: 15px;
-    }
+
 }
 
 @media all and (max-width:1000px) {
@@ -700,7 +719,30 @@ a:hover {
 }
 
 @media (max-width:750px) {
-    
+    .header__nav,
+    .header__top {
+        display: none;
+    }
+    .header__down {
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px;
+        align-items: center;
+    }
+    .header__down-up-logo {
+        width: 200px;
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .header__down-up-logo img {
+        max-width: 100%;
+    }
+    .mobile-menu {
+        display: flex;
+    }
 }
 
 @media (max-width:500px) {
