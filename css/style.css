@@ -494,7 +494,7 @@ a:hover {
 .header__top-btn {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 .header__top-btn-yellow {
     text-decoration: none;
@@ -502,10 +502,25 @@ a:hover {
     font-size: 12px;
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: center;
     padding: 2px 5px;
     border-radius: 2px;
         font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+.header__top-btn-yellow:after {
+    content: '';
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    right: -3px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .header__top-btn-white {
     text-decoration: none;
@@ -523,7 +538,7 @@ a:hover {
 }
 
 .header__down {
-    margin-top: -6px;
+    margin-top: -30px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -568,6 +583,36 @@ a:hover {
     background-color: #1e4d68;
     color: #ffffff;
     text-decoration: none;
+}
+
+
+.ue-c-main-header__subscription--hightlight {
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-position: 50% 50%;
+    border-top: 0;
+    background-color: #8a6f28 !important;
+    justify-content: center;
+    width: 121px;
+    height: 63px;
+    padding: 0 8px 0 !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+.ue-c-main-header__subscription--hightlight a {
+    text-decoration: none;
+}
+.ue-c-main-header__subscription--hightlight span {
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+}
+.ue-c-main-header__subscription--hightlight span.big {
+    font-size: 21px;
+    line-height: 1.3rem;
+    font-weight: 600;
 }
 
 @media (max-width:1300px) {
