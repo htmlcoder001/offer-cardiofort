@@ -111,11 +111,12 @@ a:hover {
 }
 
 .content {
-    display: inline-block;
+    display: block;
     width: 71%;
     padding-right: 2%;
     background: #fff;
-    padding: 25px 20px
+    padding: 25px 20px;
+    margin: 0 auto;
 }
 
 .soc_crumbs {
@@ -461,7 +462,8 @@ a:hover {
 }
 
 .header {
-    padding-top: 20px;
+    margin-top: 22px;
+    background-color: #216087;
 }
 
 .header__top {
@@ -475,7 +477,10 @@ a:hover {
 }
 .header__top-text-link {
     text-decoration: none;
-    color: #333;
+    padding: .5rem;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
 }
 .header__top-text-btn {
     text-decoration: none;
@@ -493,29 +498,32 @@ a:hover {
 }
 .header__top-btn-yellow {
     text-decoration: none;
-    text-transform: uppercase;
-    color: #333;
-    display: block;
-    font-weight: bold;
-    background-color: #f7cf3c;
-    padding: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
     border-radius: 2px;
+        font-family: Roboto,Arial,Helvetica,sans-serif;
 }
 .header__top-btn-white {
     text-decoration: none;
-    text-transform: uppercase;
-    color: #333;
-    display: block;
-    padding: 5px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
     border-radius: 2px;
-    border: 1px solid #f7cf3c;
+        font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+.header__top-btn-white {
+
 }
 
-.header__top img {
-    width: 400px;
-}
 .header__down {
-    padding-top: 20px;
+    margin-top: -6px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -532,6 +540,34 @@ a:hover {
 }
 .header__link:hover {
     color: rgb(235, 235, 110);
+}
+.header__down-up-logo {
+    width: 210px;
+    height: 40px;
+    display: block;
+}
+.header__nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 970px;
+    margin: 0 auto;
+}
+.header__nav-link {
+    font-size: 12px;
+    padding: .4rem;
+    flex: 1 0 auto;
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+.header__nav-link:hover {
+    background-color: #1e4d68;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 @media (max-width:1300px) {
