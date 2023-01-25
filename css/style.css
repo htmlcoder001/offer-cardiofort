@@ -719,6 +719,16 @@ a:hover {
 }
 
 @media (max-width:750px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content {
+        padding: 25px 10px;
+    }
+    .header {
+        margin-top: 0;
+    }
     .header__nav,
     .header__top {
         display: none;
